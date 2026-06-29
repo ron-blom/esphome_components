@@ -62,9 +62,9 @@ int PL1167_nRF24::open() {
 #endif
 #endif
 #endif
-  _radio.begin(_spiBus);
+  _radio.begin();
 #elif defined(USE_ESP32_ALTERNATE_SPI) && defined(USE_ARDUINO)
-  _radio.begin(_spiBus);
+  _radio.begin();
 #else
   _radio.begin();
 #endif
